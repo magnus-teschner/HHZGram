@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#menu-bar {
+    width: 380px;
+    background: red;
+}
+
+#content {
+    background: blue;
+    flex-grow: 1;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-right: 400px;
+}
+
+#story-container {
+    height: 250px;
+    background: rgb(0, 219, 135);
+    margin-top: 100px;
+    margin-bottom: 50px ;
+
+}
+
+
+.post-container {
+    height: 600px;
+    background: cyan;
+}
