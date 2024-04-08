@@ -11,8 +11,10 @@ body {
 }
 
 #menu-bar {
-    width: 380px;
+    width: 330px;
     background: red;
+    display: flex;
+    flex-direction: column;
 }
 
 #content {
@@ -26,13 +28,52 @@ body {
 #story-container {
     height: 250px;
     background: rgb(0, 219, 135);
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px ;
 
 }
 
-
+#logo-container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
 .post-container {
     height: 600px;
     background: cyan;
+}
+
+#logo-container img {
+    max-height: 100%;
+}
+
+#link-container {
+    flex-grow: 1;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+a img {
+    height: 1em;
+    width: auto;
+    object-fit: cover;
+}
+
+div .link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: xx-large;
+    margin-left: 60px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
