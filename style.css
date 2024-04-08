@@ -2,6 +2,7 @@ body {
     height: 100vh;
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #container {
@@ -12,24 +13,31 @@ body {
 
 #menu-bar {
     width: 330px;
-    background: red;
     display: flex;
     flex-direction: column;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #content {
-    background: blue;
     flex-grow: 1;
     padding-left: 150px;
     padding-right: 150px;
     margin-right: 400px;
+    box-shadow: 5px 5px 5px gray;
 }
 
-#story-container {
+#storys-container {
     height: 250px;
-    background: rgb(0, 219, 135);
     margin-top: 50px;
-    margin-bottom: 50px ;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 50px;
+    border: 2px solid gray;
+    border-radius: 15px;
 
 }
 
@@ -76,4 +84,30 @@ div .link{
 a {
     text-decoration: none;
     color: black;
+}
+
+.story-container {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.story-profile-name {
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+    overflow: hidden;    /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis if text is cut off */
+    width: 100%;        /* Ensure the div takes up the full width of its parent */
+    text-align: center; /* Optional: Center the text horizontally */
+    font-weight: 600;
+}
+.story-container img {
+    margin-top: 10px;
+    width: 80%; /* Ensures the image covers the width of the container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid yellow;
+
 }
