@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -104,8 +103,8 @@ a {
 }
 .story-container img {
     margin-top: 10px;
-    width: 80%;
-    height: auto;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid yellow;
@@ -122,7 +121,8 @@ a {
 
 .post-header-picture {
     height: 3.5rem;
-    width: auto;
+    width: 3.5rem;
+    object-fit: cover;
     border-radius: 50%;
     border: 5px solid yellow;
 }
@@ -166,4 +166,11 @@ div .post-image {
 }
 .commenter {
     font-weight: 700;
+}
+
+.posts  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
 }
