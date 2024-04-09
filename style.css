@@ -136,3 +136,34 @@ div .post-image {
     margin: 5px;
     font-size: 16px;
 }
+
+.actions-likes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.action-icon {
+    height: 2rem;
+    width: auto;
+}
+
+.comments-container {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.commenter {
+    font-weight: 700;
+}
