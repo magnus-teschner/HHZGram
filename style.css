@@ -19,23 +19,21 @@ body {
 }
 
 #content {
-    flex-grow: 1;
     padding-left: 150px;
     padding-right: 150px;
-    margin-right: 400px;
+    width: 450px;
     box-shadow: 5px 5px 5px gray;
 }
 
 #storys-container {
-    height: 250px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    gap: 30px;
-    padding-left: 50px;
+    gap: 15px;
+    padding-left: 10px;
     border: 2px solid gray;
     border-radius: 15px;
 
@@ -50,8 +48,8 @@ body {
     margin-top: 50px;
 }
 .post-container {
-    height: 600px;
-    background: cyan;
+    border-radius: 15px;
+    border: 2px solid gray;
 }
 
 #logo-container img {
@@ -63,10 +61,10 @@ body {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 30px;
 
 }
-a img {
+.link img {
     height: 1em;
     width: auto;
     object-fit: cover;
@@ -77,7 +75,7 @@ div .link{
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    font-size: xx-large;
+    font-size: large;
     margin-left: 60px;
 }
 
@@ -87,7 +85,7 @@ a {
 }
 
 .story-container {
-    width: 150px;
+    width: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,19 +93,46 @@ a {
 }
 
 .story-profile-name {
-    white-space: nowrap; /* Prevent text from wrapping to a new line */
-    overflow: hidden;    /* Hide overflow text */
-    text-overflow: ellipsis; /* Show ellipsis if text is cut off */
-    width: 100%;        /* Ensure the div takes up the full width of its parent */
-    text-align: center; /* Optional: Center the text horizontally */
-    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;   
+    text-overflow: ellipsis; 
+    width: 100%;       
+    text-align: center;
+    font-size: small;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 .story-container img {
     margin-top: 10px;
-    width: 80%; /* Ensures the image covers the width of the container */
-    height: auto; /* Maintains aspect ratio */
+    width: 80%;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid yellow;
 
+}
+
+.post-header {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-header-picture {
+    height: 3.5rem;
+    width: auto;
+    border-radius: 50%;
+    border: 5px solid yellow;
+}
+
+div .post-image {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    margin: 5px;
+    font-size: 16px;
 }
